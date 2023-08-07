@@ -1,0 +1,14 @@
+{
+  "name": "szkyminiprogram",
+  "version": "1.0.0",
+  "description": "术子康养",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Healer",
+  "license": "ISC",
+  "dependencies": {
+    "miniprogram-datepicker": "^0.5.1"
+  }
+}
