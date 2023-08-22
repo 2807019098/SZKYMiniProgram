@@ -9,6 +9,8 @@
   "author": "Healer",
   "license": "ISC",
   "dependencies": {
+    "@vant/weapp": "^1.10.23",
+    "md5": "^2.3.0",
     "miniprogram-datepicker": "^0.5.1"
   }
 }

@@ -1,0 +1,22 @@
+<page-meta page-font-size="system"></page-meta>
+<view class="container" style="background-image: url({{login_bg}});">
+    <navbar pageName="{{goodTitle}}" iconColor="https://cdnimg.huiyingjin.com/miniimg/assets/arrowleft.png" back="{{back}}" home="{{home}}" show-nav="{{navBox}}" nameFlag="{{nameFlag}}" icon-color="#ffffff"
+	bgColor="{{navBg}}" fontColor="{{navColor}}" showHome="{{showHome}}"></navbar>
+    <view class="form">
+        <view class="loginBox">
+            <view class="logintitle">
+              <image src="https://m.500mn.com/images/Logo.png" mode="widthFix"></image>
+            </view>
+            <view class="logininfo" style="padding-top: 24px; line-height: 1.8">
+                <van-checkbox custom-class="checkbox" value="{{ checked }}" shape="square" icon-size="13px" checked-color="#998E8E" bind:change="changeCheck"></van-checkbox>
+                <span class="span">我已阅读并同意《</span>
+                <navigator class="span bot" url="../mysetting/privacyPolicy">隐私政策</navigator><span class="span">》和《</span>
+                <navigator class="span bot" url="../mysetting/treaty">用户协议</navigator><span class="span">》</span>
+                <span class="span">未注册的手机号验证后将创建既友App账号</span>
+            </view>
+            <button class="loginBtn" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" bindtap="ttt">微信一键登录</button>
+        </view>
+    </view>
+</view>
+
+<van-toast id="van-toast" />

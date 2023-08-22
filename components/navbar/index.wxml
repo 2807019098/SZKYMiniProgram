@@ -1,0 +1,14 @@
+<view class="navTop" style='height:{{navHeight}}px;background-color:{{bgColor}};color:{{fontColor}};position: sticky;'>
+    <!-- 默认返回上一页 -->
+    <view class="navbar-action-wrap navbar-action-go row item-center" style='top:{{navTop}}px;height: {{height}}px;line-height: {{height}}px;left:15px;'>
+        <block wx:if="{{back}}">
+            <image wx:if="{{showBack}}" class="navbar-action_item" style="width:48rpx;height: 48rpx;margin-right: 20rpx;" src="{{iconColor}}" block="{{true}}" catchtap="navBack"></image>
+            <image wx:if="{{showHome}}" class="navbar-action_item" style="width:48rpx;height: 48rpx;" src="{{iconHome}}" block="{{true}}" catchtap="toIndex"></image>
+        </block>
+    </view>
+    <!-- 是否显示标题 -->
+    <view wx:if="{{nameFlag}}" class='navbar-title' style='top:{{navTop}}px;height: {{height}}px;line-height: {{height}}px;color: {{fontColor}};'>
+        <view style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;margin: 0 auto;max-width: {{statusLeft*2 - screenWidth}}px;">{{pageName}}</view>
+    </view>
+</view>
+

@@ -1,0 +1,148 @@
+
+.navTop {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.navbar-action-wrap {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: fixed;
+  z-index: 11;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.navbar-action-group {
+  border-radius: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid #f2f2f2;
+}
+
+.navbar-action-go {
+  border-radius: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.navbar-action_item {
+  color: #333;
+}
+
+.navbar-action-group .navbar-action_item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 50rpx;
+  text-align: center;
+}
+
+.navbar-action_item.tri{
+  display: inline-flex!important;
+}
+
+.navbar-action-group .last {
+  border-right: none;
+}
+
+.navbar-title {
+  box-sizing: border-box;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 600;
+  color: #131010;
+  font-size: 34rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.navbar-search {
+  box-sizing: border-box;
+  border-radius: 40rpx;
+  text-align: center;
+  position: fixed;
+  margin: auto;
+  z-index: 10;
+  font-size: 28rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.navbar-index{
+  position: relative;
+}
+
+.navbar-index::after{
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 5rpx;
+  bottom: 5rpx;
+  border-right: 1px solid #ffffff;
+}
+
+.showMenu{
+  left: 24rpx;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 100;
+  border-radius: 10rpx;
+  box-shadow: 0 0 8rpx 0 rgb(154 141 141 / 60%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 15rpx;
+  width: 150rpx;
+}
+
+.showMenuinfo{
+  flex: 1;
+  color: #999999;
+  font-size: 28rpx;
+  padding-left: 15rpx;
+}
+
+.showMenuBox{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.showMenuLi{
+  display: flex;
+  align-items: center;
+  padding: 12rpx 0;
+  position: relative;
+}
+
+.showMenuLi::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.showMenuLi:last-child::after{
+  content: "";
+  border-bottom: none;
+}
